@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+ 
+int main()
+{
+  float fnl;
+    vector<float> lista;
+        cout << "Digite um número positivo que seja maior do que 1: ";
+            cin >> fnl;
+  float typed = fnl+1;
+  
+  while(typed > fnl)
+  {
+    fnl = typed;
+        cout << "Digite outro número positivo a sua escolha que seja maior do que o anterior(" << fnl << ") : ";
+            cin >> typed;
+    lista.push_back(typed);
+  for (size_t i = 0; i < lista.size();i++)
+        {
+        cout << lista[i] << ", ";
+    }
+         cout << endl;
+  }
+         cout << "Falha numérica 4022@#! Você digitou um menor ou igual ao anterior. Tente novamente!";
+    }
